@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat | Kakao Clone</title>
+    <script src="https://kit.fontawesome.com/d48573ee2c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+    <div class="phonebox">
+        <div class="screen chat-screen">
+            <div class="status-bar">
+                <div class="status-bar__column">
+                    <span class="status-bar__clock">10:04</span>
+                </div>
+                <div class="status-bar__column">
+                    <i class="fas fa-clock"></i>
+                    <i class="fas fa-volume-mute"></i>
+                    <i class="fas fa-wifi"></i>
+                    <span class="status-bar__battery-level">100%</span>
+                    <i class="fas fa-battery-full"></i>
+                </div>
+            </div>
+            <header class="header">
+                <div class="header__header-column">
+                    <a href="index.html" class="header__back-btn">
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                    <h1 class="header__title">Z-anonymous</h1>
+                </div>
+                <div class="header__header-column">
+                    <span class="header__icon">
+                        <i class="fas fa-search"></i>
+                    </span>
+                    <span class="header__icon">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                </div>
+            </header>
+            <main class="chat">
+                <ul class="chat__messages">
+                    <span class="chat__timestamp">Friday, April 3, 2020</span>
+                    <li class="incoming-message message">
+                        <img src="src/user.png" alt="image" class="message__avatar g-avatar">
+                        <div class="message__content">
+                            <span class="message__author">Z-anonymous</span>
+                            <div class="message__bubble">
+                                Hello
+                            </div>
+                            <div class="message__bubble">
+                                You wanna trade?
+                            </div>
+                        </div>
+                        <span class="message__timestamp">12:41</span>
+                    </li>
+                    <li class="sent-message message">
+                        <span class="message__timestamp">12:46</span>
+                        <div class="message__content">
+                            <div class="message__bubble">
+                                yea
+                            </div>
+                            <div class="message__bubble">
+                                what do you deal with specifically?
+                            </div>
+                        </div>
+                    </li>
+                    <li class="incoming-message message">
+                        <img src="src/user.png" alt="image" class="message__avatar g-avatar">
+                        <div class="message__content">
+                            <span class="message__author">Z-anonymous</span>
+                            <div class="message__bubble">
+                                I can't tell u right now
+                            </div>
+                            <div class="message__bubble">
+                                if u wanna know, u have to meet me in person
+                            </div>
+                        </div>
+                        <span class="message__timestamp">12:47</span>
+                    </li>
+                    <li class="sent-message message">
+                        <span class="message__timestamp">12:47</span>
+                        <div class="message__content">
+                            <div class="message__bubble">
+                                I want to
+                            </div>
+                        </div>
+                    </li>
+                    <li class="incoming-message message">
+                        <img src="src/user.png" alt="image" class="message__avatar g-avatar">
+                        <div class="message__content">
+                            <span class="message__author">Z-anonymous</span>
+                            <div class="message__bubble">
+                                Tomorrow 11pm, at the Mask
+                            </div>
+                            <div class="message__content-timestamp">
+                                <div class="message__bubble">
+                                    See u then
+                                </div>
+                                <span class="message__timestamp">12:47</span>
+                            </div>
+                        </div>
+                        
+                    </li>
+                    <span class="chat__timestamp">Friday, April 8, 2020</span>
+                    <li class="sent-message message">
+                        <span class="message__timestamp">03:40</span>
+                        <div class="message__content">
+                            <div class="message__bubble">
+                                Hey
+                            </div>
+                            <div class="message__bubble">
+                                It's time to go
+                            </div>
+                        </div>
+                    </li>
+                    <li class="incoming-message message">
+                        <img src="src/user.png" alt="image" class="message__avatar g-avatar">
+                        <div class="message__content">
+                            <span class="message__author">Z-anonymous</span>
+                            <div class="message__content-timestamp">
+                                <div class="message__bubble first">
+                                    Good
+                                </div>
+                                <span class="message__timestamp">03:41</span>
+                            </div>
+                            
+                        </div>
+                        
+                    </li>
+                </ul>
+                
+            </main>
+
+            <div class="chat__write">
+                <div class="chat__write-column">
+                    <i class="far fa-plus-square"></i>
+                </div>
+                <div class="chat__write-column">
+                    <input type="text" placeholder="Send message" class="chat__write-input" autofocus>
+                </div>
+                <div class="chat__write-column">
+                    <span class="chat__write-icon">
+                        <i class="far fa-smile-wink"></i>
+                    </span>
+                    <span class="chat__write-icon">
+                        <i class="fas fa-microphone"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="bgn"></div>
+        
+    </div>
+    <div class="bigScreen">
+        <span class="bigScreen__text">Please make your screen small!</span>
+    </div>
+    <div class="smallScreen1">
+        <span>Please extend the screen horizontally so that the phone can be seen.</span>
+    </div>
+    <div class="smallScreen2">
+        <span>Please extend the screen vertically so that the phone can be seen.</span>
+    </div>
+</body>
+</html>

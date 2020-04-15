@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+@import "reset.css";
+@import "status-bar.css";
+@import "header.css";
+@import "nav-bar.css";
+@import "friend.css";
+@import "friends.css";
+@import "find.css";
+@import "more.css";
+@import "settings.css";
+@import "chat.css";
+@import "mobile.css";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    padding: 1px;
+    color: #020202;
+    font-family: "Open Sans", sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.phonebox {
+    background-color: #fbfcfc;
+    border-radius: 50px;
+    width: 430px;
+    height: 830px;
+    margin: 20px;
+    box-shadow: 
+        20px 20px 30px 0 rgba(0, 0, 0, 0.3),
+        -2px -2px 3px 0 #e8eced;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.screen {
+    background-color: white;
+    border-radius: 35px;
+    width: 380px;
+    height: 780px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 10;
+    position: relative;
+    border: 0.5px solid #f1f1f1;
+}
+
+main {
+    overflow-y: scroll;
+    max-height: 630px;
+    background:
+        linear-gradient(white 30%, rgba(255, 255, 255, 0)), 
+        linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, 0));
+    background-repeat: no-repeat;
+    background-size: 100% 40px, 100% 14px;
+    background-attachment: local, scroll;
+    animation: fadeIn 0.5s ease-in-out;
+    padding: 0 10px;
+}
+
+.bgn {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    position: absolute;
+    box-shadow: none;
+    box-shadow: 
+        inset -2px -2px 15px 0 rgba(0, 0, 0, 0.4),
+        inset 5px 5px 10px 0 rgba(255, 255, 255, 1);
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: white; 
+}
+   
+
+::-webkit-scrollbar-thumb {
+   background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+   background: #555; 
+}
+
+@keyframes fadeIn {
+    from {
+        transform: translateY(20px);
+    }
+    to {
+        transform: none;
+    }
+}
+
+.chats .chats__chat {
+    margin-bottom: 15px;
+}

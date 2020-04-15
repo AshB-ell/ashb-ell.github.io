@@ -1,0 +1,137 @@
+.chat {
+    height: 630px;
+    background: none;
+}
+.screen.chat-screen {
+    background-color: #bcefff;
+    /* #75a8df #9cdefd*/
+}
+
+.chat__write {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    display: flex;
+    padding: 17px 15px 20px 15px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.chat__write-column input {
+    width: 280px;
+    border: none;
+    font-size: 18px;
+}
+
+.chat__write-column input:focus {
+    outline: none;
+}
+
+
+.chat::-webkit-scrollbar-track {
+    background: #bcefff; 
+}
+
+.chat .chat__messages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.chat__messages .chat__timestamp {
+    background-color: rgba(200, 200, 200, 0.3);
+    color: white;
+    font-size: 12px;
+    padding: 8px 13px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.message {
+    display: flex;
+    align-items: flex-start;
+    width: auto;
+}
+
+.message .message__content {
+    width: 100%;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.incoming-message {
+    align-self: flex-start;
+}
+.message .message__timestamp {
+    align-self: flex-end;
+    font-size: 11px;
+    opacity: 0.6;
+    margin: 13px 5px;
+}
+
+.incoming-message img {
+    width: 40px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+.incoming-message .message__author {
+    margin-bottom: 4px;
+    display: block;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.incoming-message .message__bubble {
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 5px;
+    align-self: flex-start;
+    width: auto;
+}
+
+.incoming-message .message__content .message__bubble:nth-child(2),
+.message__bubble.first {
+    border-top-left-radius: 0px;
+}
+
+
+.sent-message {
+    align-self: flex-end;
+}
+
+
+.sent-message .message__bubble {
+    border-radius: 10px;
+    background-color: yellow;
+    filter: brightness(100%);
+    padding: 10px;
+    margin-bottom: 5px;
+    align-self: flex-end;
+    width: auto;
+}
+
+.sent-message .message__bubble:first-child {
+    border-top-right-radius: 0px;
+}
+
+i.fa-microphone {
+    margin-left: 5px;
+}
+
+.message__content-timestamp {
+    display: flex;
+}
+.message__content-timestamp > .message__timestamp {
+    margin-bottom: 5px;
+}
+/*test*/
